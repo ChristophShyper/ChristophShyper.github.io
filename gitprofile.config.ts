@@ -26,12 +26,12 @@ const CONFIG = {
       manual: {
         // Properties for manually specifying projects
         projects: [
-            'devops-infra/docker-terragrunt',
-            'devops-infra/velez',
-            'devops-infra/action-commit-push',
-            'devops-infra/action-pull-request',
-            'devops-infra/action-format-hcl',
-            'devops-infra/action-tflint',
+          'devops-infra/docker-terragrunt',
+          'devops-infra/velez',
+          'devops-infra/action-commit-push',
+          'devops-infra/action-pull-request',
+          'devops-infra/action-format-hcl',
+          'devops-infra/action-tflint',
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
@@ -47,14 +47,14 @@ const CONFIG = {
             'https://avatars.githubusercontent.com/u/63716145?s=400&u=37eea168495a5abfc24e66eac21f4cb85f72f222&v=4',
           link: 'https://github.com/devops-infra',
         },
-//         {
-//           title: 'Project Name',
-//           description:
-//             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-//           imageUrl:
-//             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-//           link: 'https://example.com',
-//         },
+        //         {
+        //           title: 'Project Name',
+        //           description:
+        //             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+        //           imageUrl:
+        //             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+        //           link: 'https://example.com',
+        //         },
       ],
     },
   },
@@ -86,8 +86,7 @@ const CONFIG = {
     email: '',
   },
   resume: {
-    fileUrl:
-      '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'AWS',
@@ -102,42 +101,42 @@ const CONFIG = {
     'CI/CD',
   ],
   experiences: [
-//     {
-//       company: 'Company Name',
-//       position: 'Position',
-//       from: 'September 2021',
-//       to: 'Present',
-//       companyLink: 'https://example.com',
-//     },
-//     {
-//       company: 'Company Name',
-//       position: 'Position',
-//       from: 'July 2019',
-//       to: 'August 2021',
-//       companyLink: 'https://example.com',
-//     },
+    //     {
+    //       company: 'Company Name',
+    //       position: 'Position',
+    //       from: 'September 2021',
+    //       to: 'Present',
+    //       companyLink: 'https://example.com',
+    //     },
+    //     {
+    //       company: 'Company Name',
+    //       position: 'Position',
+    //       from: 'July 2019',
+    //       to: 'August 2021',
+    //       companyLink: 'https://example.com',
+    //     },
   ],
   certifications: [
-//     {
-//       name: 'Lorem ipsum',
-//       body: 'Lorem ipsum dolor sit amet',
-//       year: 'March 2022',
-//       link: 'https://example.com',
-//     },
+    //     {
+    //       name: 'Lorem ipsum',
+    //       body: 'Lorem ipsum dolor sit amet',
+    //       year: 'March 2022',
+    //       link: 'https://example.com',
+    //     },
   ],
   educations: [
-//     {
-//       institution: 'Institution Name',
-//       degree: 'Degree',
-//       from: '2015',
-//       to: '2019',
-//     },
-//     {
-//       institution: 'Institution Name',
-//       degree: 'Degree',
-//       from: '2012',
-//       to: '2014',
-//     },
+    //     {
+    //       institution: 'Institution Name',
+    //       degree: 'Degree',
+    //       from: '2015',
+    //       to: '2019',
+    //     },
+    //     {
+    //       institution: 'Institution Name',
+    //       degree: 'Degree',
+    //       from: '2012',
+    //       to: '2014',
+    //     },
   ],
   publications: [
     {
@@ -150,7 +149,8 @@ const CONFIG = {
         'Information about setting up 3rd party IdPs in AWS with SAML.',
     },
     {
-      title: 'Managing networking chaos while migrating to AWS multi-account architecture',
+      title:
+        'Managing networking chaos while migrating to AWS multi-account architecture',
       conferenceName: 'AWS User Group Kraków',
       journalName: '',
       authors: '',
