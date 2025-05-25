@@ -52,7 +52,7 @@ const CONFIG = {
           description:
             'My portrait and aviation photography portfolio.',
           imageUrl:
-            'live.staticflickr.com/65535/53768556847_b971c4569a_w.jpg',
+            'https://live.staticflickr.com/65535/53768556847_b971c4569a_w.jpg',
           link: 'https://photo.shyper.pro',
         },
       ],
