@@ -13,7 +13,7 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github projects',
+      header: '💻 Github projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         // sortBy: 'stars', // Sort projects by 'stars' or 'updated'
@@ -36,25 +36,25 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'Personal projects',
+      header: '👤 Personal projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'DevOps-Infra',
+          title: '🎛️ DevOps-Infra',
           description:
             'Set of tools for DevOps and Cloud Engineers. It includes tools for managing infrastructure, CI/CD pipelines, and more.',
           imageUrl:
             'https://avatars.githubusercontent.com/u/63716145?s=400&u=37eea168495a5abfc24e66eac21f4cb85f72f222&v=4',
           link: 'https://github.com/devops-infra',
         },
-        //         {
-        //           title: 'Project Name',
-        //           description:
-        //             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-        //           imageUrl:
-        //             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-        //           link: 'https://example.com',
-        //         },
+        {
+          title: '📸 Photography Portfolio',
+          description:
+            'My portrait and aviation photography portfolio.',
+          imageUrl:
+            'live.staticflickr.com/65535/53768556847_b971c4569a_w.jpg',
+          link: 'https://photo.shyper.pro',
+        },
       ],
     },
   },
