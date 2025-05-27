@@ -140,8 +140,17 @@ const CONFIG = {
   ],
   publications: [
     {
-      title: 'Getting started with AWS - the proper way - no more IAM users',
-      conferenceName: 'AWS User Group Kraków',
+      title: 'Getting started with AWS - the proper way - no more IAM users (SSO/IC version)',
+      conferenceName: 'AWS User Group Silesia (2025)',
+      journalName: '',
+      authors: '',
+      link: 'https://www.youtube.com/watch?v=C2729nhbzp8',
+      description:
+        'Information about setting up AWS Identity Center.',
+    },
+    {
+      title: 'Getting started with AWS - the proper way - no more IAM users (SAML version)',
+      conferenceName: 'AWS User Group Kraków (2024)',
       journalName: '',
       authors: '',
       link: 'https://github.com/ChristophShyper/presentation-okta-saml-aws',
@@ -151,7 +160,7 @@ const CONFIG = {
     {
       title:
         'Managing networking chaos while migrating to AWS multi-account architecture',
-      conferenceName: 'AWS User Group Kraków',
+      conferenceName: 'AWS User Group Kraków (2020)',
       journalName: '',
       authors: '',
       link: 'https://github.com/ChristophShyper/presentation-routing',
@@ -160,7 +169,7 @@ const CONFIG = {
     },
     {
       title: 'Understanding AWS Lambda',
-      conferenceName: 'DevOps Community Poland (EPAM)',
+      conferenceName: 'DevOps Community Poland (EPAM) (2019)',
       journalName: '',
       authors: '',
       link: 'https://github.com/ChristophShyper/presentation-lambda',
