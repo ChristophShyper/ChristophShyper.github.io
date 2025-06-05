@@ -206,6 +206,14 @@ export const languages: Record<string, Language> = {
     name: "Medium",
     iconName: "medium",
   },
+  article: {
+    name: "Article",
+    iconName: "article",
+  },
+  network: {
+    name: "Network",
+    iconName: "network",
+  },
 };
 
 

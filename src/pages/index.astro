@@ -5,6 +5,7 @@ import HeroIndex from "../components/portfolio/HeroIndex.astro";
 import Contact from "../components/portfolio/Contact.astro";
 import ListProjects from "../components/portfolio/ListProjects.astro";
 import ListPresentations from "../components/portfolio/ListPresentations.astro";
+import ListArticles from "../components/portfolio/ListArticles.astro";
 import { Icon } from "astro-icon/components";
 const pageTitle = "Krzysztof Szyper's Portfolio";
 const description = "";
@@ -37,6 +38,27 @@ import Heading from "../components/ui/Heading.astro";
   </section>
 
 
+
+  <section
+    class="bg-gradient-to-t dark:from-[#0e0e10] from-[#fff] from-50% to-transparent to-100% scroll-m-16"
+    id="articles"
+  >
+    <div class="flex flex-col gap-8 max-w-7xl mx-auto">
+      <ListArticles>
+        <div class="flex gap-4 items-center justify-center text-center">
+          <Icon class="text-3xl dark:text-white text-blacktext" name="article" />
+          <Heading text="Medium" textGradient="articles" level={2}/>
+        </div>
+        <p class="z-2 text-center mx-auto text-lg max-xl:text-base max-w-2xl dark:text-gray-200 text-blacktext my-6 leading-6 font-medium">
+          Sharing <b class=" bg-gradient-to-r  from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text">knowledge</b> writing some
+          <b class=" bg-gradient-to-r  from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text">publications</b>.
+        </p>
+      </ListArticles>
+    </div>
+  </section>
+
+
+
   <section
     class="bg-gradient-to-t dark:from-[#0e0e10] from-[#fff] from-50% to-transparent to-100% scroll-m-16"
     id="presentations"
@@ -48,12 +70,12 @@ import Heading from "../components/ui/Heading.astro";
           <Heading text="Meetup" textGradient="presentations" level={2}/>
         </div>
         <p class="z-2 text-center mx-auto text-lg max-xl:text-base max-w-2xl dark:text-gray-200 text-blacktext my-6 leading-6 font-medium">
-          Sharing <b class=" bg-gradient-to-r  from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text">knowledge</b> on meetup
-          <b class=" bg-gradient-to-r  from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text">presentations</b>.
+          Giving back on <b class=" bg-gradient-to-r  from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text">meetup presentations</b>.
         </p>
       </ListPresentations>
     </div>
   </section>
+
 
 
 <!--
@@ -71,5 +93,8 @@ import Heading from "../components/ui/Heading.astro";
     </div>
   </section>
 -->
+
+
+
   <Contact />
 </Layout>
