@@ -1,759 +1,224 @@
-<br/>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/45073703/177566625-9b84e793-4559-4475-ba54-8d3d5f4123d4.png" width="35%">
+# NeonMint Template Documentation
 
-  <h4 align="center">Easy to use automatic portfolio builder for every GitHub user!</h4>
+![neonmint](https://github.com/user-attachments/assets/068da5e4-50c0-4134-99d3-8cb8ec867d9f)
 
-  <p align="center">
-    <a href="https://codeclimate.com/github/arifszn/gitprofile/maintainability"><img src="https://api.codeclimate.com/v1/badges/c60f42d7d0b61bd33e98/maintainability" /></a>
-    <a href="https://github.com/arifszn/gitprofile/actions/workflows/deploy.yml"><img src="https://github.com/arifszn/gitprofile/actions/workflows/deploy.yml/badge.svg" /></a>
-    <a href="https://github.com/arifszn/gitprofile/issues"><img src="https://img.shields.io/github/issues/arifszn/gitprofile"/></a>
-    <a href="https://github.com/arifszn/gitprofile/stargazers"><img src="https://img.shields.io/github/stars/arifszn/gitprofile"/></a>
-    <a href="https://github.com/arifszn/gitprofile/network/members"><img src="https://img.shields.io/github/forks/arifszn/gitprofile"/></a>
-    <a href="https://github.com/arifszn/gitprofile/commits/main"><img src="https://img.shields.io/github/last-commit/arifszn/gitprofile/main"/></a>
-    <a href="https://github.com/arifszn/gitprofile/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/></a>
-    <a href="https://github.com/arifszn/gitprofile/blob/main/LICENSE"><img src="https://img.shields.io/github/license/arifszn/gitprofile"/></a>
-    <a href="https://idx.google.com/import?url=https%3A%2F%2Fgithub.com%2Farifszn%2Fgitprofile"><picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://cdn.idx.dev/btn/open_dark_20.svg">
-        <source media="(prefers-color-scheme: light)" srcset="https://cdn.idx.dev/btn/open_light_20.svg">
-        <img height="20" alt="Open in IDX" src="https://cdn.idx.dev/btn/open_purple_20.svg">
-      </picture></a>
-  </p>
+## 🎯 Overview
 
-  <p align="center">
-    <a href="https://arifszn.github.io/gitprofile">View Demo</a>
-    ·
-    <a href="https://github.com/arifszn/gitprofile/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/arifszn/gitprofile/discussions">Request Feature</a>
-  </p>
-</p>
+**NeonMint** is a minimalist and modern template designed for developers and digital creatives. Its dark-toned aesthetic with mint green accents offers a clean, elegant, and functional visual experience, ideal for portfolios, dashboards, or tech landing pages.
 
-<p align="center">
-  <a href="https://arifszn.github.io/gitprofile">
-    <img src="https://github.com/arifszn/gitprofile/assets/45073703/eb6c38a4-ac92-4006-869b-e4e24f6f5cf6" alt="Preview" width="60%"/>
-  </a>
-  <br/>
-  <a href="#arifszn"><img src="https://github.com/arifszn/gitprofile/assets/45073703/4d2ccd45-e566-4743-bf61-cadc03ece54c" width="50%" alt="Shadow"/></a>
-</p>
+## 📁 Project Structure
 
-**GitProfile** is a powerful portfolio builder that allows you to create a stunning and personalized portfolio site in minutes, even if you have no coding experience. Simply provide your GitHub username, and GitProfile will automatically generate a portfolio. Best of all, you can easily deploy your portfolio to GitHub Pages with just a few clicks, making it accessible to the world in no time.
-
-**Features:**
-
-✓ [Easy to Setup](#-installation--setup)  
-✓ [33 Themes](#themes)  
-✓ [Google Analytics](#google-analytics)  
-✓ [Hotjar](#hotjar)  
-✓ [SEO](#seo)  
-✓ [PWA](#pwa)  
-✓ [Avatar and Bio](#avatar-and-bio)  
-✓ [Social Links](#social-links)  
-✓ [Skill Section](#skills)  
-✓ [Experience Section](#experience)  
-✓ [Certification Section](#certifications)  
-✓ [Education Section](#education)  
-✓ [Projects Section](#projects)  
-✓ [Publication Section](#publications)  
-✓ [Blog Posts Section](#blog-posts)
-
-To view a live example, **[click here](https://arifszn.github.io/gitprofile)**.
-
-<p align="center">
-  <img src="https://github.com/arifszn/gitprofile/assets/45073703/406e8368-415a-42ef-89c5-d43cc8bbeb19" alt="Themes">
-</p>
-
-## 🛠 Installation & Setup
-
-There are two ways to use **GitProfile**. Use any.
-
-- [Forking this repo _(recommended)_](#forking-this-repo)
-- [Setting up locally](#setting-up-locally)
-
-### Forking this repo
-
-These instructions will get you a copy of the project and deploy your portfolio online using GitHub Pages!
-
-- **Fork repo:** Click [here](https://github.com/arifszn/gitprofile/fork) to fork the repo so you have your own project to customize. A "fork" is a copy of a repository.
-- **Rename repo:**
-  - If you want to host your portfolio at `https://<USERNAME>.github.io`, rename your forked repository to `username.github.io` in GitHub, where `username` is your GitHub username (or organization name).
-  - If you want to host your portfolio at `https://<USERNAME>.github.io/<REPO_NAME>` (e.g. `https://<USERNAME>.github.io/portfolio`), rename your forked repository to `<REPO_NAME>` (e.g. `portfolio`) in GitHub.
-- **Enable workflows:** Go to your repo's **Actions** tab and enable workflows.
-
-  ![Workflows](https://github.com/arifszn/gitprofile/assets/45073703/7e82f7d4-900c-4cb9-83f9-bcaa1ca2b910)
-
-- **Base Value:** Open `gitprofile.config.ts`, and change `base`'s value.
-
-  - If you are deploying to `https://<USERNAME>.github.io`, set `base` to `'/'`.
-
-  - If you are deploying to `https://<USERNAME>.github.io/<REPO_NAME>` (e.g. `https://<USERNAME>.github.io/portfolio`), then set `base` to `'/<REPO_NAME>/'` (e.g. `'/portfolio/'`).
-
-  ```ts
-  // gitprofile.config.ts
-  {
-    base: '/',
-    // ...
-  }
-  ```
-
-- **Commit the changes:** Now commit to your **main** branch with your changes. Wait a few minutes so that the CI/CD pipeline can publish your website to GitHub Pages. You can check the progress in the [Actions](https://github.com/arifszn/gitprofile/actions) tab.
-
-Your portfolio website will be live shortly. Any time you commit a change to the **main** branch, the website will be automatically updated. If you face any issue viewing the website, double-check the `base` value in the `gitprofile.config.ts` file. Also, check if **Source** is set to **GitHub Actions** in **Settings** ➜ **Pages** ➜ **Build and deployment**.
-
-If you wish to add a custom domain, no CNAME file is required. Just add it to your repo's **Settings** ➜ **Pages** ➜ **Custom domain**.
-
-As this is a Vite project, you can also host your website to Netlify, Vercel, Heroku, or other popular services. Please refer to this [doc](https://vitejs.dev/guide/static-deploy.html) for a detailed deployment guide to other services.
-
-> [!NOTE]
-> If you are going to deploy using **Vercel**, remember to set the `base` as `/`.
-
-```ts
-// gitprofile.config.ts
-{
-  base: '/',
-  // ...
-}
+```bash
+└── 📁NeonMint
+    └── 📁public
+        ├── android-chrome-192x192.png
+        ├── android-chrome-512x512.png
+        ├── apple-touch-icon.png
+        ├── favicon-16x16.png
+        ├── favicon-32x32.png
+        ├── favicon.ico
+        └── 📁images
+            ├── 📁posts    # Post images
+            └── 📁projects # Project images
+        └── site.webmanifest # PWA configuration file
+    └── 📁src
+        ├── 📁components  # Reusable UI components
+        │   ├── 📁blog    # Blog components
+        │   ├── 📁layout  # Layout components
+        │   ├── 📁portfolio # Portfolio components
+        │   └── 📁ui      # UI components
+        ├── 📁icons       # Icons (.svg)
+        ├── 📁layouts     # Site layouts
+        │   ├── Layout.astro           # Main application layout
+        │   ├── MarkdownAbout.astro    # About-me page layout
+        │   ├── MarkdownPostLayout.astro # Posts page layout
+        │   └── ProjectLayout.astro    # Projects page layout
+        ├── 📁pages       # Site pages
+        │   ├── about-me.md            # About-me page
+        │   ├── 📁blog   # All posts page
+        │   │   ├── index.astro        # Blog home page
+        │   │   ├── 📁posts            # Blog posts
+        ├── │   ├── └── index.astro     # All posts page
+        │   │   ├── 📁tags             # Blog tags
+        │   │   └── 📁techs            # Blog technologies
+        │   ├── index.astro            # Home page
+        │   ├── 📁portfolio
+        │   │   └── 📁projects         # Portfolio projects
+        │   ├── robots.txt.ts          # robots.txt configuration
+        │   └── rss.xml.js             # RSS configuration
+        ├── 📁scripts
+        │   └── menu.js                # Menu script
+        ├── 📁styles
+        │   └── global.css             # Global styles
+        └── 📁utils
+            └── languages.ts           # Technology tools configuration
+    ├── .gitignore
+    ├── astro.config.mjs
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    └── tsconfig.json
 ```
 
-[**Not working?**](https://github.com/arifszn/gitprofile/discussions/548)
+## 🛠️ Technology Stack
 
-### Setting up locally
+- **Framework**: Astro v5.6.1
+- **UI Library**: Preact v10.26.2
+- **Styling**: TailwindCSS v4.0.8
+- **Icons**: astro-icon v1.1.5
+- **Syntax Highlighting**: PrismJS v1.30.0
+- **Animations**: tailwindcss-animated v2.0.0
+- **Analytics**: @vercel/speed-insights v1.2.0
 
-- Clone the project and change directory.
+## ✨ Key Features
 
-  ```shell
-  git clone https://github.com/arifszn/gitprofile.git
-  cd gitprofile
-  ```
+1. **🚀 Performance Optimized**
+   - Static site generation
+   - Partial hydration with Preact
+   - Optimized images and assets
 
-- Install dependencies.
+2. **💻 Modern Development Experience**
+   - TypeScript support
+   - Hot module replacement
+   - ESLint integration
 
-  ```shell
-  npm install
-  ```
+3. **🔍 SEO & Analytics**
+   - Built-in sitemap generation
+   - RSS feed support
+   - Vercel Speed Insights
 
-- Run dev server.
+4. **🎨 Styling & UI**
+   - TailwindCSS for utility-first styling
+   - Animated components
+   - Responsive design
+   - Dark mode support
 
-  ```shell
-  npm run dev
-  ```
+## 🚀 Getting Started
 
-- Finally, visit `http://localhost:5173/gitprofile/` from your browser.
+1. **📦 Installation**
 
-> Alternatively, you can set up and run the project using Docker with **[Vail](https://github.com/arifszn/vail)**, a powerful tool for local development of JavaScript/TypeScript Apps.
+   ### 🚀**Astro Installation**
+   ```bash
+   npm create astro@latest -- --template EFEELE/neonmint
+   ```
+   or
+   ### 🔧**Manual Installation**
+   
+   #### Clone Repository
+   ```bash
+   git clone https://github.com/EFEELE/NeonMint.git
+   ```
+   #### Install Dependencies
+   ```bash
+   npm install
+   ```
+
+  
+
+3. **⚡ Development**
+   ```bash
+   npm run dev
+   ```
+
+4. **🏗️ Build**
+   ```bash
+   npm run build
+   ```
+
+5. **👀 Preview**
+   ```bash
+   npm run preview
+   ```
+
+## ⚙️ Configuration
+
+The project is configured through several key files:
+
+- `astro.config.mjs`: Main Astro configuration
+- `tailwind.config.js`: TailwindCSS configuration
+- `tsconfig.json`: TypeScript configuration
 
 ## 🎨 Customization
 
-All the magic happens in the file `gitprofile.config.ts`. Open it and modify it according to your preference.
+### 📄 Adding New Pages
 
-You can leave most of the sections empty if you don't want to display them on your portfolio.
+Create new `.astro` files in the `src/pages` directory. The file name will determine the route.
 
-```ts
-// gitprofile.config.ts
+### 🔧 Adding New Languages or Technologies
 
-const CONFIG = {
-  github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
-  },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
-  base: '/gitprofile/',
-  projects: {
-    github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
-      automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
-        exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
-        },
-      },
-      manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
-    },
-    external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
-    },
-  },
-  seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
-    imageURL: '',
-  },
-  social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    skype: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
-  },
-  resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
-  },
-  skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
-  ],
-  experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
-  educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-    },
-  ],
-  // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 3, // How many articles to display. Max is 10.
-  },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
-  // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
-  themeConfig: {
-    defaultTheme: 'nord',
+To incorporate a new programming language or technological tool into the site's capsules, follow these steps:
 
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
-    disableSwitch: false,
+1. **🖼️ Add the SVG icon**: Place the SVG file of the language or tool in the `src/icons` folder.
 
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
-    respectPrefersColorScheme: false,
+        > **💡 Recommendation**: For SVG icons, I recommend using [SVGL](https://svgl.app/), an excellent library of high-quality vectors that offers optimized icons for most popular languages and technologies.
 
-    // Display the ring in Profile picture
-    displayAvatarRing: true,
+2. **📝 Register the language**: Open the `utils/languages.ts` file and add a new entry to the languages object following this format:
 
-    // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'procyon',
-    ],
+   ```typescript
+   html: {
+       name: "HTML 5",
+       iconName: "html",
+   },
+   ```
 
-    // Custom theme, applied to `procyon` theme
-    customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
-    },
-  },
+   Where:
+   - `html`: Is the unique identifier for the language
+   - `name`: Is the name that will be displayed visibly in the interface
+   - `iconName`: Is the name of the SVG file without the extension (must match exactly with the file name in `src/icons`)
 
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+Once these steps are completed, the new language or technology will be available for use in the site's capsules. You can select it when creating or editing projects or posts, and the corresponding icon will be displayed correctly in the interface.
 
-  enablePWA: true,
-};
+If you encounter any issues during this process, try restarting the development server. In some cases, changes to configuration files or static resources require a restart to be detected correctly.
 
-export default CONFIG;
+To verify that the new language has been added correctly, check the list of available technologies in the user interface after restarting the server.
+
+---
+
+### 🧷 Favicon Setup
+
+To customize your site's favicon and web app icons, you can generate all the necessary variants using [favicon.io](https://favicon.io/favicon-converter/). Upload your logo or icon, and the tool will create a full set of optimized files for various devices and platforms.
+
+Place the generated files in the `📂 public` directory as follows:
+
+```bash
+📂 public
+├── 📄 android-chrome-192x192.png
+├── 📄 android-chrome-512x512.png
+├── 📄 apple-touch-icon.png
+├── 📄 favicon-16x16.png
+├── 📄 favicon-32x32.png
+├── 📄 favicon.ico
+└── 📄 site.webmanifest
 ```
 
-### Themes
+> 💡 Don’t forget to update the contents of `site.webmanifest` to match your app’s name, description, and theme color for a complete PWA experience.
 
-There are 33 themes available that can be selected from the dropdown.
+---
 
-The default theme can be specified.
+### 🎨 Styling
 
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  themeConfig: {
-    defaultTheme: 'light',
-    // ...
-  },
-};
-```
+- Use TailwindCSS classes for styling
+- Add custom styles in `src/styles/global.css`
 
-<p align="center">
-  <img src="https://github.com/arifszn/gitprofile/assets/45073703/91a2d9e6-67e5-47b4-9752-1881ac0f907f" alt="Theme Dropdown" width="50%">
-</p>
+### 🧩 Components
 
-You can create your own custom theme by modifying these values. Theme `procyon` will have the custom styles.
+- Create reusable components in `src/components`
+- Import icons using `astro-icon`
 
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  /**
-   * Defines the custom theme colors and styles for the application.
-   * The theme includes the following properties:
-   * - `primary`: The primary color used throughout the application.
-   * - `secondary`: The secondary color used for accents and highlights.
-   * - `accent`: The accent color used for special elements.
-   * - `neutral`: The neutral color used for backgrounds and text.
-   * - `base-100`: The base background color.
-   * - `--rounded-box`: The border radius for boxes and containers.
-   * - `--rounded-btn`: The border radius for buttons.
-   */
-  themeConfig: {
-    customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
-    },
-  },
-};
-```
+## 🚀 Deployment
 
-### Google Analytics
+The site is configured for deployment on Vercel, but can be deployed to any static hosting service.
 
-**GitProfile** supports both GA3 and GA4. If you do not want to use Google Analytics, keep the `id` empty.
+## 🤝 Contributing
 
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  googleAnalytics: {
-    id: 'G-XXXXXXXXX',
-  },
-};
-```
-
-Besides tracking visitors, it will track `click events` on projects and blog posts, and send them to Google Analytics.
-
-### Hotjar
-
-**GitProfile** supports [hotjar](https://www.hotjar.com) to track visitor interaction and behavior. If you do not want to use Hotjar, keep the `id` empty.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
-};
-```
-
-### SEO
-
-You can customize the meta tags for SEO in `seo`.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
-    imageURL: '',
-  },
-};
-```
-
-### PWA
-
-GitProfile is PWA enabled. The site can be installed as a Progressive Web App. To turn it off, set `enablePWA` to `false`.
-
-![PWA](https://github.com/arifszn/gitprofile/assets/45073703/9dc7cc5c-4262-4445-a7a5-1e3566ef43fa)
-
-### Avatar and Bio
-
-Your avatar and bio will be fetched from GitHub automatically.
-
-### Social Links
-
-You can link your social media services you're using, including LinkedIn, X, Mastodon, ResearchGate, Facebook, Instagram, Reddit, Threads, YouTube, Udemy, Dribbble, Behance, Medium, dev, Stack Overflow, Skype, Telegram, personal website, phone and email.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '',
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: '',
-    dev: '',
-    stackoverflow: '',
-    skype: '',
-    telegram: '',
-    website: '',
-    phone: '',
-    email: '',
-  },
-};
-```
-
-### Skills
-
-To showcase your skills provide them here.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  skills: ['JavaScript', 'React.js'],
-};
-```
-
-Empty array will hide the skills section.
-
-### Experience
-
-Provide your job history in `experiences`.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-};
-```
-
-Empty array will hide the experience section.
-
-### Education
-
-Provide your education history in `educations`.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  educations: [
-    {
-      institution: 'Institution name 1',
-      degree: 'Bachelor of Science',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution name 2',
-      degree: 'Higher Secondary Certificate (HSC)',
-      from: '2012',
-      to: '2014',
-    },
-  ],
-};
-```
-
-Empty array will hide the education section.
-
-### Certifications
-
-Provide your industry certifications in `certifications`.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
-};
-```
-
-Empty array will hide the certifications section.
-
-### Projects
-
-#### Github Projects
-
-- **Automatic Mode:** Seamlessly showcase your top GitHub projects based on stars or last updated date.
-- **Manual Mode:** Choose specific repositories to highlight.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  projects: {
-    github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
-      automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
-        exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
-        },
-      },
-      manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
-    },
-  },
-};
-```
-
-#### External Projects
-
-- **Highlight Projects Beyond GitHub:** Feature projects hosted on other platforms or personal websites.
-- **Control over Content:** Provide custom titles, descriptions, images, and links for each external project.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  projects: {
-    external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
-    },
-  },
-};
-```
-
-### Publications
-
-Provide your academic publishing in `publications`.
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-    },
-  ],
-};
-```
-
-Empty array will hide the publications section.
-
-### Blog Posts
-
-If you have [medium](https://medium.com) or [dev](https://dev.to) account, you can show your recent blog posts in here just by providing your medium/dev username. You can limit how many posts to display (Max is `10`).
-
-```ts
-// gitprofile.config.ts
-const CONFIG = {
-  // ...
-  blog: {
-    source: 'dev',
-    username: 'arifszn',
-    limit: 5,
-  },
-};
-```
-
-![Blog](https://github.com/arifszn/gitprofile/assets/45073703/410124f2-a3c2-48f1-8ec8-0c6fae74ae3d)
-
-The posts are fetched by [blog.js](https://github.com/arifszn/blog.js).
-
-## 💖 Support
-
-<p>You can show your support by starring this project. ★</p>
-<a href="https://github.com/arifszn/gitprofile/stargazers">
-  <img src="https://img.shields.io/github/stars/arifszn/gitprofile?style=social" alt="Github Star">
-</a>
-
-## 💡 Contribute
-
-To contribute, see the [Contributing guide](https://github.com/arifszn/gitprofile/blob/main/CONTRIBUTING.md).
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## 📄 License
 
-[MIT](https://github.com/arifszn/gitprofile/blob/main/LICENSE)
+This project is licensed under the MIT License - see the LICENSE file for details.
+

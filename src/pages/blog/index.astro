@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/blog/Hero.astro";
+import Tags from "../../components/blog/Tags.astro";
+import ListPosts from "../../components/blog/ListPosts.astro";
+const pageTitle = "Cloud Infrastructure and Technology Blog | Krzysztof Szyper";
+const description = "Explore my latest insights and tutorials on cloud infrastructure, and DevOps practices.";
+const ogimage ={
+    url: "/images/szyper.png",
+    alt: "Default image",
+};
+---
+
+<Layout  pageTitle={pageTitle} description={description} ogimage={ogimage}>
+   
+    <Hero />
+    <Tags />
+    <div class="px-8 max-sm:px-4">
+        <ListPosts />
+    </div>
+
+</Layout>
