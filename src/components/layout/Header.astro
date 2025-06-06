@@ -12,15 +12,36 @@ if (!staticData) {
   throw new AstroError("JSON data not found");
 }
 
+
+//const currentPath = Astro.url.pathname;
+//const routes = ["/", "/portfolio", "/about-me", ];
+//
+//// Check if the current route is in the list of routes
+//const isActiveRoute = routes.includes(currentPath);
+//
+//const navItems = isActiveRoute
+//  ? ["home", "projects", "articles", "presentations", "experience", "about"]
+//  : ["home", "projects", "articles", "presentations", "about"];
+
+
 const currentPath = Astro.url.pathname;
-const routes = ["/", "/portfolio", "/about-me", ]; 
+let navItems;
 
-// Check if the current route is in the list of routes
-const isActiveRoute = routes.includes(currentPath);
+switch (true) {
+  case currentPath.startsWith("/photo"):
+    navItems = ["home", "portraits", "aviation", "travel", "events", "portfolio", "about"];
+    break;
+  case currentPath.startsWith("/portfolio"):
+    navItems = ["home", "projects", "articles", "presentations", "experience", "photo", "about"];
+    break;
+  case currentPath == "/about-me":
+    navItems = ["home", "projects", "articles", "presentations", "experience", "photo", "about"];
+    break;
+  default:
+    navItems = ["home", "portfolio", "photo", "about"];
+    break;
+}
 
-const navItems = isActiveRoute 
-  ? ["home", "projects", "articles", "presentations", "experience", "about"]
-  : ["home", "projects", "articles", "presentations", "about"]; // Change the items
 ---
 
 <header

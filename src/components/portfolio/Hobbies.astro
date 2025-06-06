@@ -4,10 +4,11 @@ interface Props {
 }
 
 const hobbies = [
-    { name: "Portrait Photography", url: "https://photo.shyper.pro/portraits" },
-    { name: "Aviation Photography", url: "https://photo.shyper.pro/aviation" },
+    // { name: "Portrait Photography", url: "/photo/portraits" },
+    { name: "Portrait Photography", url: "/photo/portraits", target: "_self" },
+    { name: "Aviation Photography", url: "/photo/aviation", target: "_self" },
+    { name: "Travel", url: "/photo/travel", target: "_self" },
     { name: "Trekking / Hiking" },
-    { name: "Travel", url: "https://photo.shyper.pro/travel" },
 ];
 
 import Hobbie from "./Hobbie.astro";
@@ -35,7 +36,7 @@ const classes = variants[variant];
     hobby.url ? (
       <a
         href={hobby.url}
-        target="_blank"
+        target={hobby.target}
         rel="noopener noreferrer"
         class="px-4 py-1 rounded-full text-sm font-medium text-zinc-500 dark:text-neutral-400 hover:text-blacktext bg-riptide-50 dark:bg-zinc-800 hover:bg-mint-200 cursor-default transition-all ease-in-out duration-300"
       >
