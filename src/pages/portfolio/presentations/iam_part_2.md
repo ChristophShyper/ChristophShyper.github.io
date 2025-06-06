@@ -25,4 +25,6 @@ image:
 
 ![Meetup banner](/images/presentations/iam_part_2_krakow_banner.png)
 
+![With attendees](/images/presentations/iam_part2_krakow_pres.jpeg)
+
 [📅 Meetup.com event](https://www.meetup.com/pl-PL/sysopskrk/events/307522269/)
