@@ -32,7 +32,8 @@ jobs:
         run: npm run lint
 
       - name: Run prettier (if configured)
-        run: npm run -s prettier || echo "Skipping: no prettier script configured"
+        run: |
+          npm run -s prettier || echo "Skipping: no prettier script configured"
 
       - name: Build
         run: npm run build
