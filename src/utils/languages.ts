@@ -138,6 +138,10 @@ export const languages: Record<string, Language> = {
     name: "AWS",
     iconName: "aws_dark",
   },
+  azure: {
+    name: "Azure",
+    iconName: "azure",
+  },
   docker: {
     name: "Docker",
     iconName: "docker",
@@ -149,6 +153,10 @@ export const languages: Record<string, Language> = {
   makefile: {
     name: "Makefile",
     iconName: "makefile",
+  },
+  gcp: {
+    name: "GCP",
+    iconName: "gcp",
   },
   groovy: {
     name: "Groovy",
