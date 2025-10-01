@@ -3,4 +3,33 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
+      interval: 'daily'
+      time: '04:00'
+    open-pull-requests-limit: 10
+    labels:
+      - dependencies
+      - npm
+    groups:
+      eslint-and-typescript:
+        patterns:
+          - 'eslint'
+          - '@eslint/*'
+          - 'eslint-*'
+          - 'typescript'
+          - 'typescript-*'
+          - 'typescript-eslint*'
+          - '@types/*'
+          - 'globals'
+      astro-and-preact:
+        patterns:
+          - 'astro'
+          - '@astrojs/*'
+          - 'preact'
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
       interval: 'weekly'
+    labels:
+      - dependencies
+      - github-actions
