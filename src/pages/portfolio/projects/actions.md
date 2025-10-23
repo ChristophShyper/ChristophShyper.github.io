@@ -35,3 +35,6 @@ GitHub Action that will run terraform validate.
 
 ### [action-tflint](https://github.com/devops-infra/action-tflint)
 GitHub Action that will run TFlint on Terraform files.
+
+### [template-action](https://github.com/devops-infra/template-action)
+Template repository for GitHub Actions.
