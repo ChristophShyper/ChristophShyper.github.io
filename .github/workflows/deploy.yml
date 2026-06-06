@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
-      - name: Build with vite
+      - name: Build site
         run: npm run build
         env:
           PUBLIC_GA_ID: ${{ secrets.PUBLIC_GA_ID }}
