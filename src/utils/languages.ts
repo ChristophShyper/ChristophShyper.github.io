@@ -158,6 +158,10 @@ export const languages: Record<string, Language> = {
     name: "GCP",
     iconName: "gcp",
   },
+  openai: {
+    name: "OpenAI",
+    iconName: "openai",
+  },
   groovy: {
     name: "Groovy",
     iconName: "groovy",
@@ -169,14 +173,6 @@ export const languages: Record<string, Language> = {
   jenkins: {
     name: "Jenkins",
     iconName: "jenkins",
-  },
-  gcp: {
-    name: "GCP",
-    iconName: "gcp",
-  },
-  azure: {
-    name: "Azure",
-    iconName: "azure",
   },
   okta: {
     name: "Okta",
