@@ -1,14 +1,14 @@
 version: 2
 updates:
-  - package-ecosystem: 'npm'
-    directory: '/'
+  - package-ecosystem: npm
+    directory: /
     schedule:
-      interval: 'daily'
-      time: '04:00'
-    open-pull-requests-limit: 10
-    labels:
-      - dependencies
-      - npm
+      interval: weekly
+      day: monday
+      time: "05:00"
+      timezone: "UTC"
+    assignees:
+      - ChristophShyper
     groups:
       eslint-and-typescript:
         patterns:
@@ -26,10 +26,12 @@ updates:
           - '@astrojs/*'
           - 'preact'
 
-  - package-ecosystem: 'github-actions'
-    directory: '/'
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: 'weekly'
-    labels:
-      - dependencies
-      - github-actions
+      interval: weekly
+      day: monday
+      time: "05:00"
+      timezone: UTC
+    assignees:
+      - ChristophShyper
