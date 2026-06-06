@@ -1,12 +1,19 @@
-name: Test Deployment
+name: Dependabot CI
 
 on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  test-deploy:
-    if: github.actor != 'dependabot[bot]'
+  dependabot-check:
+    if: github.actor == 'dependabot[bot]' || contains(github.event.pull_request.labels.*.name, 'dependencies')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -27,4 +34,4 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          CI: ''
+          PUBLIC_GA_ID: ""
